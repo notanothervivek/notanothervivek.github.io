@@ -1,0 +1,2390 @@
+
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
+  
+  <link href="https://cdn.jsdelivr.net/npm/daisyui@1.3.4/dist/full.css" rel="stylesheet" type="text/css" />
+ 
+   <style>
+     body{
+     background:rgba(239, 246, 255);
+     }
+     /*
+     #pic{
+     width:400px;
+     height:400px;
+     }
+     
+     #demoimg{
+     width:400;height:400px;
+     }
+     */
+ .card-body{
+     flex-direction:row !important;
+    
+ }
+ 
+ .label{
+   padding:0px !important;
+ }
+ 
+ 
+ #prof1,#prof2,#prof3,#prof4{
+   position:absolute;
+   top:0px;
+   left:0px;
+  width:100%;
+  height:auto;
+ }
+ 
+ #prof1{ z-index:10;}
+ #prof2{ z-index:12;}
+ #prof3{ z-index:14;}
+ #prof4{ z-index:16;}
+ 
+ 
+ .logoImage{
+   height:150px;
+   width:auto;
+ }
+     </style>
+ 
+ <body class="bg-accent">
+ <!--<h1 class="text-xl font-medium text-black m-1  text-semibold bordered p-1">boostJobSearch</h1>-->
+ <img src="images/logo.png" class="my-1 mx-1 logoImage"></img>
+ 
+ 
+ 
+ 
+ <div class="hero w-full">
+   <div class="text-center mt-5 hero-content w-full flex flex-col">
+   
+       <h1 class="mb-5 text-5xl font-bold text-white">
+         BOOST YOUR JOB SEARCH 
+       </br>
+         EVERY TIME YOU TWEET 
+           </h1> 
+       <p class="text-xl text-semibold mb-5 text-white">
+            a free tool to make a tiny cut on your profile image to let others know that you are searching/hiring for a job, while you go about interacting and enjoying like you usually do.
+            
+     
+           </p> 
+      
+ 
+ 
+ 
+           <div class="w-full sm:w-3/4 mt-3 mb-2  mx-auto p-1 flex flex-row" >
+             <div class="w-1/2">
+               <img src="images/usualProfile.png" ></img>
+             </div> 
+             <div class="w-1/2" style="position:relative;">
+             <img src="images/nowProfile1.png" id="prof1"></img>
+             <img src="images/nowProfile2.png" id="prof2"></img>
+             <img src="images/nowProfile3.png" id="prof3"></img>
+             <img src="images/nowProfile4.png" id="prof4"></img>
+               </div>
+             </div>
+ 
+ 
+           <ul class="steps w-full">
+             <li class="step step-info">Upload Image</li> 
+             <li class="step step-info">Select Options</li> 
+             <li class="step step-info">Get A Boosted Profile Image</li> 
+           </ul>
+ 
+ 
+           <p class="text-sm text-gray-500 text-semibold mb-5">
+           
+             [ NOTE : everything is done in your browser window itself, so your photo doesn't leave your computer ]   
+      
+            </p> 
+ 
+            
+ 
+ 
+   </div>
+ </div>
+ 
+ <div class="w-full">
+ <div class="divider">STEP 1</div> 
+ <p class="mb-4 mt-1 text-center">upload your existing twitter profile image or add the url to it</p>
+ </div>
+ 
+   <div class=" p-1 flex flex-wrap">
+ 
+     
+ 
+ 
+       <div class="w-full  p-2 ">
+ 
+       
+ 
+ 
+     <div class="p-6 card shadow-lg bg-white  w-full " >
+       
+       <div class="w-full flex flex-row justify-center items-end">
+         <div class="form-control w-2/3">
+           <label class="label">
+             <span class="label-text">Image from url</span>
+           </label> 
+           <input type="text" placeholder="image url" id="imageFromUrl" class="input input-primary input-bordered ">
+         </div> 
+         <div class="btn btn-outline btn-accent w-1/3" id="btnUploadImageFromUrl">LOAD</div>
+      </div>
+ 
+         <div class="divider divider-horizontal text-black">OR</div> 
+ 
+ 
+         <div class="btn btn-outline btn-accent  w-full" id="btnUploadImage">   
+           <div class="form-control">
+               <label class="cursor-pointer label">
+               <span class="label-text  pr-3">UPLOAD IMAGE</span> 
+               <div>
+                 <input id="image-file" type="file" />
+                 
+               </div>
+           </label>
+       </div>
+           </div>
+         
+           <div class="mx-auto my-1" id="container">
+   
+           </div><!-- the img container to  show the uploaded image  -->     
+        
+       </div>
+ </div><!---->
+ 
+ <div class="w-full">
+ <div class="divider">STEP 2</div> 
+ <p class="mb-4 mt-1 text-center">choose the approriate options</p>
+   </div>
+ 
+ 
+ 
+ 
+       <div class="w-full sm:w-1/2 p-2 ">
+     <div class="p-6 card shadow-lg bg-white  " id="typeOfAction">    
+         <div class="card-body"> 
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeLooking"> 
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">LOOKING FOR JOB</span> 
+             <div>
+               <input type="radio" name="chooseType" checked="checked" class="radio radio-primary" value="1"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+         </div>
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeHiring">
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text  pr-3">HIRING FOR JOB</span> 
+             <div>
+               <input type="radio" name="chooseType"  class="radio radio-secondary" value="2"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+         </div>
+     </div>
+       </div>
+ </div><!---->
+ 
+ 
+ 
+ 
+ <div class="w-full sm:w-1/2 p-2 ">
+     <div class="p-6 card shadow-lg bg-white w-full " id="typeOfJob">  
+         <div class="card-body justify-evenly"> 
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnModeFreelance">  
+         <div class="form-control" id="freelanceJob">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">FREELANCE</span> 
+             <div>
+               <input type="radio" name="chooseMode" checked="checked" class="radio radio-primary" value="1"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+     </div>
+     <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnModeFulltime">  
+         <div class="form-control" id="fullTimeJob">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">FULL-TIME</span> 
+             <div>
+               <input type="radio" name="chooseMode"  class="radio radio-secondary" value="2"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div>     
+         </div>
+         </div>
+       </div>
+ </div><!-- flex box -->
+ 
+ 
+ 
+ <div class="w-full sm:w-1/2 p-2 ">
+     <div class="p-6 card shadow-lg bg-white  " id="borderOrNot">    
+       <div class="card-body">
+       <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnBorderNo"> 
+           <div class="form-control">
+             <label class="cursor-pointer label">
+               <span class="label-text pr-3">Without Border</span> 
+               <div>
+                 <input type="radio" name="chooseBorderYesNo" checked="checked" class="radio radio-primary" value=""> 
+                 <span class="radio-mark"></span>
+               </div>
+             </label>
+           </div>   
+           </div>
+       <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnBorderYes">   
+       <div class="form-control">
+         <label class="cursor-pointer label">
+           <span class="label-text pr-3">With Border</span> 
+           <div>
+             <input type="radio" name="chooseBorderYesNo"  class="radio radio-secondary" value=""> 
+             <span class="radio-mark"></span>
+           </div>
+         </label>
+       </div> 
+       </div>  
+   </div>
+       <div class="w-full sm:w-1/2 p-2 m-1 bordered mx-auto" id="btnChooseColor">   
+           <div class="form-control">
+               <label class="cursor-pointer label">
+           <span class="label-text pr-3">CHOOSE BORDER COLOR</span> 
+           <div>
+             <input id="borderColorSelection" value='#00ffcc' type="color"   />
+             
+           </div>
+       </label>  
+       </div>
+       </div>
+ 
+ 
+     </div>
+ </div><!---->
+ 
+    
+ 
+ 
+ <div class="w-full sm:w-1/2 p-2 ">
+       <div class="p-6 card shadow-lg bg-white    " id="positionOfCutLooking">     
+         <div class="card-body">
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosLeft"> 
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">LEFT</span> 
+             <div>
+               <input type="radio" name="choosePosLooking" checked="checked" class="radio radio-primary" value="1"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+         </div>
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosTop"> 
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">TOP</span> 
+             <div>
+               <input type="radio" name="choosePosLooking"  class="radio radio-secondary" value="2"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div>   
+         </div>
+     </div>
+       </div>
+ 
+ 
+      
+       <div class="p-6 card shadow-lg bg-white   " id="positionOfCutHiring">   
+         <div class="card-body">
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosRight">   
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">RIGHT</span> 
+             <div>
+               <input type="radio" name="choosePosHiring" checked="checked" class="radio radio-primary" value=""> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+         </div>
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosBottom"> 
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-3">BOTTOM</span> 
+             <div>
+               <input type="radio" name="choosePosHiring"  class="radio radio-secondary" value=""> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div>   
+         </div>
+         </div>
+       </div>
+ 
+ 
+ 
+   </div><!---->
+ 
+ 
+ 
+ <div class="w-full">
+ <div class="divider">STEP 3</div> 
+ <p class="mb-4 mt-1 text-center">get your new profile image by clicking the button below. The image can then be downloaded like a normal image online, where you right-click or long-tap on it and click 'save image as'</p>
+   </div>
+ 
+ 
+ 
+    
+ <div class="w-full p-2 ">
+         <div class="p-6 card shadow-lg bg-white  w-full   mx-1 mt-1  " >
+             
+             <div class="btn btn-outline btn-accent  w-1/2 sm:w-1/3 mx-auto" id="renderIt">  
+             <span class="label-text"> MAKE MY NEW AWESOME PROFILE IMAGE</span>
+             </div>
+         <!--<p class="p-2">(You can save the image by right-clicking or long tapping) </p>-->
+        
+        
+ 
+         <div class="mx-auto my-1" id="image_for_crop" ></div>
+         </div>
+        
+ </div><!---->
+ 
+ 
+ 
+ 
+ 
+ <div class="w-full my-3">
+ <center>
+    <h2 class="text-xl font-medium text-black text-center">DON'T FORGET TO SHARE THE LOVE </h2>
+   <a href="https://twitter.com/intent/tweet?button_hashtag=boostJobSearch&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="Check out my awesome modified profile pic. You should do it too if you want to #boostJobSearch " data-url="http://www.boostjobsearch.notanothervivek.com" data-related="@notAnotherVivek" data-show-count="false">Tweet #boostJobSuccess</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+ </center>
+</div>
+ 
+ 
+ 
+ 
+ 
+ <div class="w-full">
+   <div class="divider">REFERENCE</div> 
+   <p class="mb-4 mt-1"></p>
+     </div>
+   
+ 
+ 
+ <div class="w-full">
+ 
+   <img class="w-full h-auto mx-auto my-3" src="images/fullForWebsite.png">
+ 
+ </div>
+ 
+ 
+
+ 
+   </div>
+ 
+ 
+ 
+   </body>
+ 
+ 
+ 
+ 
+   <script
+   src="https://code.jquery.com/jquery-3.6.0.min.js"
+   integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+   crossorigin="anonymous"></script>
+ 
+   <script>
+ 
+ let ref_obj={
+ 'type':1, //looking ...2=hiring 
+ 'mode':1, //freelance ..2=full time 
+ 'pos':1, //left ..2=top  right bottom
+ 'border':1 //without border ...2 border
+ 
+ }
+ 
+ 
+ let has_gradient=0
+ let selected_color ='#00ffcc'
+ let selected_color_1 = '#00ffcc'
+ let selected_color_2 = '#00ffcc'
+ let selected_color_3 = '#00ffcc'
+ 
+ 
+ 
+ $('#positionOfCutHiring').hide() 
+ $('#btnChooseColor').hide()
+ 
+ $('#renderIt').on("click", function(){
+ 
+ if(img_loaded){
+ 
+
+ if(ref_obj.type==1){
+     if(ref_obj.mode ==1){
+ 
+         if(ref_obj.pos ==1){
+ 
+             if(ref_obj.border ==1){
+ 
+     make_looking_freelance_left_borderless()
+ 
+              }
+            else if(ref_obj.border ==2){
+             make_looking_freelance_left_border()
+              }
+ 
+ 
+ 
+         }
+         else if(ref_obj.pos ==2){
+             if(ref_obj.border ==1){
+ make_looking_freelance_top_borderless()
+         }
+           else if(ref_obj.border ==2){
+             make_looking_freelance_top_border()
+             }
+          }
+ 
+ 
+     }
+    else if(ref_obj.mode ==2){
+ 
+ 
+       if(ref_obj.pos ==1){
+         if(ref_obj.border ==1){
+ make_looking_fulltime_left_borderless()
+             }
+             else if(ref_obj.border ==2){
+                 make_looking_fulltime_left_border()
+             }
+        }
+       else if(ref_obj.pos ==2){
+             if(ref_obj.border ==1){
+                 make_looking_fulltime_top_borderless()
+                 }
+             else if(ref_obj.border ==2){
+                 make_looking_fulltime_top_border()
+              }
+        }
+ 
+ 
+    }
+ }//type is 1 --------------------------------
+ else if(ref_obj.type ==2){
+ 
+     if(ref_obj.mode ==1){
+ 
+ if(ref_obj.pos ==1){
+ 
+     if(ref_obj.border ==1){
+ 
+ make_hiring_freelance_right_borderless()
+ 
+      }
+    else if(ref_obj.border ==2){
+     make_hiring_freelance_right_border()
+      }
+ 
+ 
+ 
+ }
+ else if(ref_obj.pos ==2){
+     if(ref_obj.border ==1){
+ make_hiring_freelance_bottom_borderless()
+ }
+   else if(ref_obj.border ==2){
+     make_hiring_freelance_bottom_border()
+     }
+  }
+ 
+ 
+ }
+ else if(ref_obj.mode ==2){
+ 
+ 
+ if(ref_obj.pos ==1){
+ if(ref_obj.border ==1){
+ make_hiring_fulltime_right_borderless()
+     }
+     else if(ref_obj.border ==2){
+         make_hiring_fulltime_right_border()
+     }
+ }
+ else if(ref_obj.pos ==2){
+     if(ref_obj.border ==1){
+         make_hiring_fulltime_bottom_borderless()
+         }
+     else if(ref_obj.border ==2){
+         make_hiring_fulltime_bottom_border()
+      }
+ }
+ 
+ 
+ }
+ 
+ }//type is 2--------------------------
+ 
+ }
+ else{
+   alert('Please upload an image')
+ }
+ 
+ }); //on click renderit
+ 
+ 
+ 
+ $('.radio-mark').on("click", function(){
+ $(this).closest(".btn").click();
+ });
+ 
+ 
+ $('#btnTypeLooking').on("click", function(){
+     $("#btnTypeLooking :input").prop('checked',true);
+     ref_obj.type=1
+     //ref_obj.pos=1
+     $('#btnPosLeft').click()
+     $('#positionOfCutLooking').show()
+     $('#positionOfCutHiring').hide()
+ });
+ 
+ 
+ $('#btnTypeHiring').on("click", function(){
+     $("#btnTypeHiring :input").prop('checked',true);
+     ref_obj.type=2
+    // ref_obj.pos=1
+     $('#btnPosRight').click()
+     $('#positionOfCutHiring').show()
+     $('#positionOfCutLooking').hide()
+ });
+ 
+ 
+ $('#btnModeFreelance').on("click", function(){
+     $("#btnModeFreelance :input").prop('checked',true);
+     ref_obj.mode=1
+ });
+ 
+ $('#btnModeFulltime').on("click", function(){
+     $("#btnModeFulltime :input").prop('checked',true);
+     ref_obj.mode=2
+ });
+ 
+ 
+ 
+ $('#btnBorderYes').on("click", function(){
+     $("#btnBorderYes :input").prop('checked',true);
+     ref_obj.border=2
+     $('#btnChooseColor').show()
+ });
+ 
+ 
+ $('#btnBorderNo').on("click", function(){
+     $("#btnBorderNo :input").prop('checked',true);
+     ref_obj.border=1
+     $('#btnChooseColor').hide()
+ });
+ 
+ 
+ 
+ $('#borderColorSelection').on("change", function(){
+     let col=''+$(this).val()
+    console.log(col )
+    if(isValidHex(col)){
+         //ref_obj.border_color = $(this).val()
+         selected_color=col
+         console.log('inside is valid hex')
+     }else{
+         console.log('not valid hex')
+     }
+    });
+ 
+ 
+  
+ 
+ 
+ 
+    $('#btnPosLeft').on("click", function(){  
+     $("#btnPosLeft :input").prop('checked',true);  
+     ref_obj.pos=1
+    });
+ 
+    $('#btnPosTop').on("click", function(){    
+     $("#btnPosTop :input").prop('checked',true);
+     ref_obj.pos=2
+    });
+    $('#btnPosRight').on("click", function(){   
+     $("#btnPosRight :input").prop('checked',true); 
+     ref_obj.pos=1
+    });
+    $('#btnPosBottom').on("click", function(){   
+     $("#btnPosBottom :input").prop('checked',true); 
+     ref_obj.pos=2
+    });
+ 
+ 
+ 
+ 
+ 
+ 
+ function isValidHex(color) {
+     if(!color || typeof color !== 'string') return false;
+ 
+     // Validate hex values
+     if(color.substring(0, 1) == '#') color = color.substring(1);
+ 
+     switch(color.length) {
+       case 3: return /^[0-9A-F]{3}$/i.test(color);
+       case 6: return /^[0-9A-F]{6}$/i.test(color);
+       case 8: return /^[0-9A-F]{8}$/i.test(color);
+       default: return false;
+     }
+ 
+     return false;
+   }
+   </script>
+ 
+ 
+ 
+ <script>
+ 
+ let img_loaded=0
+ 
+ let fileTag = document.getElementById("image-file");
+  
+     
+ fileTag.addEventListener("change", function() {
+   changeImage(this);
+ });
+ 
+ function changeImage(input) {
+   var reader;
+   img_loaded = 0
+   if (input.files && input.files[0]) {
+     reader = new FileReader();
+ 
+     reader.onload = function(e) {
+ 
+ if($('#demoimg').length){
+     $("#demoimg").remove();
+ }
+    
+     let immm = new Image();
+ immm.id = "demoimg"
+ immm.width="400"
+ immm.height="400"
+ immm.addEventListener("load", function() {
+  // testnow()   //the wrkn one
+  
+  //testnow2()
+ 
+ // testnow3() //wrks fully 
+ 
+ //testnow4()  //wrks..top n bottom
+ //testnow5()
+ 
+ img_loaded = 1
+ 
+ });
+ 
+ immm.addEventListener("error", function() {
+   img_loaded = 0
+ });
+ 
+ 
+ 
+ immm.src = e.target.result ; //canvas.toDataURL();
+ document.getElementById('container').appendChild(immm);
+ 
+ 
+ 
+ }
+ 
+     reader.readAsDataURL(input.files[0]);
+   }
+ }
+ 
+ 
+ 
+ 
+ 
+ $('#btnUploadImageFromUrl').on("click", function(){
+ 
+ let newurl = encodeURI(''+$('#imageFromUrl').val())
+ 
+ console.log('newurl = '+newurl)
+ 
+ if($('#demoimg').length){
+     $("#demoimg").remove();
+ }
+    
+     let immm = new Image();
+ immm.id = "demoimg"
+ immm.width="400"
+ immm.height="400"
+ //immm.crossOrigin="anonymous"
+ immm.addEventListener("load", function() {
+  // testnow()   //the wrkn one
+  
+  //testnow2()
+ 
+ // testnow3() //wrks fully 
+ 
+ //testnow4()  //wrks..top n bottom
+ //testnow5()
+ 
+ img_loaded = 1
+ 
+ });
+ 
+ immm.addEventListener("error", function() {
+   img_loaded = 0
+ });
+ 
+ 
+ 
+ immm.src = newurl ; //canvas.toDataURL();
+ document.getElementById('container').appendChild(immm);
+ 
+ 
+ 
+ 
+ 
+ });
+ 
+ 
+ 
+ 
+ function make_hiring_fulltime_right_borderless(){
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let xx2=400
+ let lenn2=219
+ let rkk2=181
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk2;jj<lenn2;jj++){
+     ctx.putImageData( id,xx2,jj)
+   }
+ 
+ //lenn--
+ //rkk++
+ xx2--
+ }
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+ 
+ 
+ }//make_hiring_fulltime_right_borderless()
+ 
+ 
+ </script>
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ <script>
+ 
+ 
+ 
+ 
+ function make_hiring_fulltime_right_border(){
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = 400//imgwidth;
+ canvas.height = 400//imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ 
+ 
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+     gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ //right
+ ctx.beginPath();
+ ctx.moveTo(400,180)
+ ctx.lineTo(360,180)
+ ctx.lineTo(360,220)
+ ctx.lineTo(400,220)
+ //ctx.lineTo(400,160)
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ //right
+ /*
+ ctx.beginPath();
+ ctx.moveTo(400,178)
+ ctx.lineTo(358,178)
+ ctx.lineTo(358,222)
+ ctx.lineTo(400,222)
+ //ctx.lineTo(400,160)
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ */
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let xx2=400
+ let lenn2=219
+ let rkk2=181
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk2;jj<lenn2;jj++){
+     ctx.putImageData( id,xx2,jj)
+   }
+ 
+ //lenn--
+ //rkk++
+ xx2--
+ }
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+ }//make_hiring_fulltime_right_border()
+ 
+ 
+ 
+ 
+ 
+ 
+ function make_hiring_fulltime_bottom_borderless(){
+ 
+ let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let xx=400
+ let lenn=219
+ let rkk=181
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk;jj<lenn;jj++){
+     ctx.putImageData( id,jj,xx)
+   }
+ xx--
+ //lenn--
+ //rkk++
+ //xx--
+ }
+ 
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ }//make_hiring_fulltime_bottom_borderless
+ 
+ 
+ function make_hiring_fulltime_bottom_border(){
+ 
+ 
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(180,400)
+ ctx.lineTo(180,360)
+ ctx.lineTo(220,360)
+ ctx.lineTo(220,400)
+ //ctx.lineTo(400,160)
+ 
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let xx=400
+ let lenn=219
+ let rkk=181
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk;jj<lenn;jj++){
+     ctx.putImageData( id,jj,xx)
+   }
+ xx--
+ //lenn--
+ //rkk++
+ //xx--
+ }
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ }//make_hiring_fulltime_bottom_border
+ 
+ 
+ 
+ 
+ 
+ function make_looking_fulltime_left_borderless(){
+ 
+     
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let len2=219
+ let rk2=181
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rk2;jj<len2;jj++){
+     ctx.putImageData( id,x,jj)
+   }
+ 
+ //len--
+ //rk2++
+ }
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+ 
+ }//make_looking_fulltime_left_borderless
+ 
+ 
+ 
+     function make_looking_fulltime_left_border(){
+ 
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ //left 
+ ctx.beginPath();
+ ctx.moveTo(0,180) 
+ ctx.lineTo(40,180)
+ ctx.lineTo(40,220)
+ ctx.lineTo(0,220)
+ //ctx.lineTo(400,160)
+ //ctx.closePath();
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let len2=219
+ let rk2=181
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rk2;jj<len2;jj++){
+     ctx.putImageData( id,x,jj)
+   }
+ 
+ //len--
+ //rk2++
+ }
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+     }//make_looking_fulltime_left_border
+     
+ 
+ 
+ 
+       function make_looking_fulltime_top_borderless(){
+ 
+         
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let len=219
+ let rk=181
+ for(let x=0;x<40;x++){
+ 
+ for(let jj=rk;jj<len;jj++){
+   ctx.putImageData( id,jj,x)
+ }
+ 
+ //len--
+ //rk++
+ }
+ 
+ 
+ common_end_render(canvas)
+ 
+       }//make_looking_fulltime_top_borderless
+ 
+ 
+ 
+ 
+ 
+         function make_looking_fulltime_top_border(){
+ 
+             
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ //left 
+ ctx.beginPath();
+ ctx.moveTo(180,0) 
+ ctx.lineTo(180,40)
+ ctx.lineTo(220,40)
+ ctx.lineTo(220,0)
+ //ctx.lineTo(400,160)
+ //ctx.closePath();
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ let len=219
+ let rk=181
+ for(let x=0;x<40;x++){
+ 
+ for(let jj=rk;jj<len;jj++){
+   ctx.putImageData( id,jj,x)
+ }
+ 
+ //len--
+ //rk++
+ }
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+         }//make_looking_fulltime_top_border
+         
+ 
+ 
+ 
+ 
+         function make_hiring_freelance_right_borderless(){
+ 
+             
+             let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let xx=400
+ let lenn=239
+ let rkk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk;jj<lenn;jj++){
+     ctx.putImageData( id,xx,jj)
+   }
+ 
+ lenn--
+ rkk++
+ xx--
+ }
+ 
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+         }//make_hiring_freelance_right_borderless
+         
+         
+         function make_hiring_freelance_right_border(){
+ 
+ 
+             let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(400,160)
+ ctx.lineTo(360,200)
+ 
+ 
+ //ctx.lineTo(360,202)
+ //ctx.moveTo(360,200)
+ ctx.lineTo(400,240)
+ ctx.lineTo(400,160)
+ //ctx.lineTo(400,160)
+ 
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(400,158)
+ ctx.lineTo(358,200)
+ //ctx.lineTo(360,202)
+ //ctx.moveTo(360,200)
+ ctx.lineTo(400,242)
+ ctx.lineTo(400,158)
+ //ctx.lineTo(400,160)
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let xx=400
+ let lenn=239
+ let rkk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk;jj<lenn;jj++){
+     ctx.putImageData( id,xx,jj)
+   }
+ 
+ lenn--
+ rkk++
+ xx--
+ }
+ 
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+         }//make_hiring_freelance_right_border
+          
+         
+          function make_hiring_freelance_bottom_borderless(){
+           
+             let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let xx=400
+ let lenn=239
+ let rkk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk;jj<lenn;jj++){
+     ctx.putImageData( id,jj,xx)
+   }
+ 
+ lenn--
+ rkk++
+ xx--
+ }
+ 
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+ 
+ 
+          }//make_hiring_freelance_bottom_borderless
+         
+         
+ function make_hiring_freelance_bottom_border(){
+ 
+                
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(160,400)
+ ctx.lineTo(200,360)
+ 
+ 
+ //ctx.lineTo(360,202)
+ //ctx.moveTo(360,200)
+ ctx.lineTo(240,400)
+ ctx.lineTo(160,400)
+ //ctx.lineTo(400,160)
+ 
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(158,400)
+ ctx.lineTo(200,358)
+ //ctx.lineTo(360,202)
+ //ctx.moveTo(360,200)
+ ctx.lineTo(242,400)
+ ctx.lineTo(158,400)
+ //ctx.lineTo(400,160)
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let xx=400
+ let lenn=239
+ let rkk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rkk;jj<lenn;jj++){
+     ctx.putImageData( id,jj,xx)
+   }
+ 
+ lenn--
+ rkk++
+ xx--
+ }
+ 
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+          }//make_hiring_freelance_bottom_border
+           
+ 
+ 
+ 
+ 
+ 
+ 
+  function make_looking_freelance_left_borderless(){
+ 
+     
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let len=239
+ let rk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rk;jj<len;jj++){
+     ctx.putImageData( id,x,jj)
+   }
+ 
+ len--
+ rk++
+ }
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+  }//make_looking_freelance_left_borderless
+  
+  
+  function make_looking_freelance_left_border(){
+ 
+ 
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(0,160)
+ ctx.lineTo(40,200)
+ 
+ 
+ //ctx.lineTo(360,202)
+ //ctx.moveTo(360,200)
+ ctx.lineTo(0,240)
+ ctx.lineTo(0,160)
+ //ctx.lineTo(400,160)
+ //ctx.closePath();
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(0,158)
+ ctx.lineTo(42,200)
+ //ctx.lineTo(360,202)
+ //ctx.moveTo(360,200)
+ ctx.lineTo(0,242)
+ ctx.lineTo(0,158)
+ //ctx.lineTo(400,160)
+ //ctx.closePath();
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let len=239
+ let rk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rk;jj<len;jj++){
+     ctx.putImageData( id,x,jj)
+   }
+ 
+ len--
+ rk++
+ }
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+  }//make_looking_freelance_left_border
+ 
+ 
+  
+  function make_looking_freelance_top_borderless(){
+ 
+ 
+     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let len=239
+ let rk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rk;jj<len;jj++){
+     ctx.putImageData( id,jj,x)
+   }
+ 
+ len--
+ rk++
+ }
+ 
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+  }//make_looking_freelance_top_borderless
+  
+  
+  
+  function make_looking_freelance_top_border(){
+ 
+   let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
+ // let canvas =    document.querySelector('canvas');
+ 
+ let canvas = document.createElement("CANVAS")
+ 
+ 
+ let imgwidth = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas.width = imgwidth;
+ canvas.height = imgheight;
+ 
+ let ctx = canvas.getContext('2d');
+ 
+ 
+ 
+ ctx.save();
+ 
+ 
+ // Create a circle
+ ctx.beginPath();
+ ctx.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx.clip();
+ 
+ 
+ ctx.drawImage(sourceimage, 0, 0,400,400,2,2,398,398);
+ 
+ // Undo the clipping
+ ctx.restore();
+ 
+ 
+ 
+ let gradient=''
+ 
+ if(has_gradient==1){
+ gradient=ctx.createLinearGradient(0,0,400,0);
+ gradient.addColorStop("0",selected_color_1);
+ gradient.addColorStop("0.5",selected_color_2);
+ gradient.addColorStop("1.0",selected_color_3);
+ }
+ else{
+     gradient=selected_color
+ }
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.arc(200, 200, 198, 0, 2 * Math.PI);
+ ctx.strokeStyle = gradient; //colorforborder;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(160,0) 
+ ctx.lineTo(200,40)
+ ctx.lineTo(240,0)
+ ctx.lineTo(160,0)
+ //ctx.lineTo(400,160)
+ //ctx.closePath();
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ 
+ ctx.beginPath();
+ ctx.moveTo(158,0) 
+ ctx.lineTo(200,42)
+ ctx.lineTo(242,0)
+ ctx.lineTo(158,0)
+ //ctx.lineTo(400,160)
+ //ctx.closePath();
+ ctx.strokeStyle = gradient;
+ ctx.lineWidth=4;
+ ctx.lineCap="round";
+ ctx.lineJoin="round";
+ ctx.stroke();
+ 
+ 
+ 
+ var id = ctx.createImageData(1,1); // only do this once per page
+ var d  = id.data;                        // only do this once per page
+ d[0]   = 0;
+ d[1]   = 0;
+ d[2]   = 0;
+ d[3]   = 0;
+ 
+ 
+ 
+ let len=239
+ let rk=161
+ for(let x=0;x<40;x++){
+ 
+   for(let jj=rk;jj<len;jj++){
+     ctx.putImageData( id,jj,x)
+   }
+ 
+ len--
+ rk++
+ }
+ 
+ 
+ 
+ common_end_render(canvas)
+ 
+ 
+ 
+  }//make_looking_freelance_top_border
+   
+   
+ 
+ 
+ 
+ 
+ </script>
+ 
+ <script>
+ 
+ 
+ 
+ function common_end_render(canvas){
+ 
+ 
+ let canvas2 = document.createElement("CANVAS")
+ 
+ 
+ 
+ let imgwidth2 = 400//sourceimage.width; //sourceimage.offsetWidth;
+ let imgheight2 = 400 //sourceimage.height; //sourceimage.offsetHeight;
+ canvas2.width = imgwidth2;
+ canvas2.height = imgheight2;
+ //canvas.height = canvas.width = 0;
+ 
+ 
+ canvas2.setAttribute('width', 400);
+ canvas2.setAttribute('height', 400)
+ 
+ //document.getElementById('container').appendChild(canvas);
+ 
+ 
+ let ctx2 = canvas2.getContext('2d');
+ //console.log(imgwidth+'-----'+imgheight)
+ //ctx.drawImage(sourceimage, 0, 0,400,400);
+ 
+ 
+ ctx2.save();
+ 
+ 
+ // Create a circle
+ ctx2.beginPath();
+ ctx2.arc(200, 200, 200, 0, Math.PI * 2, false);
+ 
+ // Clip to the current path
+ ctx2.clip();
+ 
+ 
+ ctx2.drawImage(canvas, 0, 0,400,400);
+ 
+ // Undo the clipping
+ ctx2.restore();
+ 
+ 
+ 
+ 
+ 
+ let immm = new Image();
+ immm.id = "thepic";
+ 
+ immm.width=400
+ immm.height=400
+ immm.onload = function () {
+    
+ }
+ immm.src = canvas2.toDataURL();
+ if($('#thepic').length){ $('#thepic').remove()  }
+ //document.getElementById('container').appendChild(canvas2);
+ document.getElementById('image_for_crop').appendChild(immm);
+ 
+ }//common end render
+ 
+ 
+ $('#prof1').hide()
+ $('#prof2').hide()
+ $('#prof3').hide()
+ 
+ $(document).ready(function(){
+ setTimeout(() => {
+ abc()
+ }, 4000);
+ 
+ });
+ 
+ 
+ function abc(){
+   $('#prof4').fadeOut("slow")
+ $('#prof3').fadeIn("slow")
+ 
+ setTimeout(() => {
+ def()
+ }, 4000);
+ }
+ 
+ function def(){
+   $('#prof3').fadeOut("slow")
+ $('#prof2').fadeIn("slow")
+ 
+ setTimeout(() => {
+ pqr()
+ }, 4000);
+ }
+ 
+ function pqr(){
+   $('#prof2').fadeOut("slow")
+ $('#prof1').fadeIn("slow")
+ 
+ setTimeout(() => {
+ xyz()
+ }, 4000);
+ }
+ 
+ function xyz(){
+   $('#prof1').fadeOut("slow")
+ $('#prof4').fadeIn("slow")
+ 
+ setTimeout(() => {
+ abc()
+ }, 4000);
+ }
+ 
+ </script>
