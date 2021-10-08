@@ -1,44 +1,16 @@
-<!DOCTYPE html>
-
-<head>
-
-  
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-     <!-- Primary Meta Tags -->
-  <title>a Free Tool To Boost Your Job Search Every Time You Tweet | by @notAnotherVivek</title>
-  <meta name="title" content="a Free Tool To Boost Your Job Search Every Time You Tweet | by @notAnotherVivek">
-  <meta name="description" content="A free tool to make a small notch on your profile image letting others know that you are hiring or searching for a job. Instantly increase your chances of landing your dream job while you continue browsing Twitter as usual."> 
-  
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://boostjobsearch.notanothervivek.com">
-  <meta property="og:title" content="a Free Tool To Boost Your Job Search Every Time You Tweet | by @notAnotherVivek">
-  <meta property="og:description" content="A free tool to make a small notch on your profile image letting others know that you are hiring or searching for a job. Instantly increase your chances of landing your dream job while you continue browsing Twitter as usual."> 
-  <meta property="og:image" content="images/boost-job-search-intro.png">
-  
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://boostjobsearch.notanothervivek.com">
-  <meta property="twitter:title" content="a Free Tool To Boost Your Job Search Every Time You Tweet | by @notAnotherVivek">
-  <meta property="twitter:description" content="A free tool to make a small notch on your profile image letting others know that you are hiring or searching for a job. Instantly increase your chances of landing your dream job while you continue browsing Twitter as usual."> 
-  <meta property="twitter:image" content="images/boost-job-search-intro.png">
-     
-        <link rel="shortcut icon" href="favicon.ico">
-    
-    
-   
-     
-    </head>
 
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.1/dist/tailwind.min.css" rel="stylesheet" type="text/css" />
   
   <link href="https://cdn.jsdelivr.net/npm/daisyui@1.3.4/dist/full.css" rel="stylesheet" type="text/css" />
  
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet"> 
+ 
    <style>
      body{
      background:rgba(239, 246, 255);
+	 font-family: 'Roboto', sans-serif;
      }
      
  .card-body{
@@ -70,19 +42,12 @@
    width:auto;
  }
      </style>
-
-     <style>
-       .btn{
-         height: auto !important;
-         display: block !important ;
-         min-height:5rem!important ;
-         padding:2px !important;
-       }
-
-
-     
-
-     </style>
+	 
+	 <style>
+	 .btn{
+	 min-height:5rem !important;
+	 }
+	 </style>
  
  <body class="bg-accent">
  <!--<h1 class="text-xl font-medium text-black m-1  text-semibold bordered p-1">boostJobSearch</h1>-->
@@ -122,9 +87,9 @@
  
  
            <ul class="steps w-full">
-             <li class="step step-info">Upload</br> Image</li> 
-             <li class="step step-info">Select</br> Options</li> 
-             <li class="step step-info">Boosted</br> Image</li> 
+             <li class="step step-info">Upload Image</li> 
+             <li class="step step-info">Select Options</li> 
+             <li class="step step-info">Boosted Profile</li> 
            </ul>
  
  
@@ -142,7 +107,7 @@
  
  <div class="w-full">
  <div class="divider">STEP 1</div> 
- <p class="mb-4 mt-1 text-center">upload your existing twitter profile image </p>
+ <p class="mb-4 mt-1 text-center">upload your existing twitter profile image or add the url to it</p>
  </div>
  
    <div class=" p-1 flex flex-wrap">
@@ -155,14 +120,14 @@
        
  
  
-     <div class="p-1 card shadow-lg bg-white  w-full " >
+     <div class="p-6 card shadow-lg bg-white  w-full " >
        
-  
+    
  
-         <div class="btn btn-outline btn-accent  w-full sm:w-1/2 mx-auto" id="btnUploadImage">   
+         <div class="btn btn-outline btn-accent  w-full " id="btnUploadImage">   
            <div class="form-control">
-               <label class="cursor-pointer label">
-               <span class="label-text  px-1">UPLOAD IMAGE</span> 
+               <label class="cursor-pointer label justify-self-center" style="display:flex;flex-direction:column;">
+               <span class="label-text  py-2 ">UPLOAD IMAGE</span> 
                <div>
                  <input id="image-file" type="file" />
                  
@@ -186,61 +151,60 @@
  
  
  
-      <div class="w-full sm:w-1/2 p-1 ">
-        <div class="w-full " id="typeOfAction">
-          <div class="justify-evenly">
-            <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeLooking">
-              <div class="form-control">
-                <label class="cursor-pointer label">
-                  <span class="label-text px-1 content-center">LOOKING FOR JOB</span>
-                  <div>
-                    <input type="radio" name="chooseType" checked="checked" class="radio radio-primary" value="1">
-                    <span class="radio-mark"></span>
-                  </div>
-                </label>
-              </div>
-            </div>
-            <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeHiring">
-              <div class="form-control">
-                <label class="cursor-pointer label">
-                  <span class="label-text px-1 content-center">HIRING FOR JOB</span>
-                   <div>
-                    <input type="radio" name="chooseType" class="radio radio-secondary" value="2">
-                    <span class="radio-mark"></span>
-                  </div>
-                </label>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!---->
+       <div class="w-full sm:w-1/2 p-2 ">
+     <div class=" card shadow-lg bg-white  " id="typeOfAction">    
+         <div class="card-body"> 
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeLooking"> 
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text pr-1">LOOKING FOR JOB</span> 
+             <div>
+               <input type="radio" name="chooseType" checked="checked" class="radio radio-primary" value="1"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+         </div>
+         <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeHiring">
+         <div class="form-control">
+           <label class="cursor-pointer label">
+             <span class="label-text  pr-1">HIRING FOR JOB</span> 
+             <div>
+               <input type="radio" name="chooseType"  class="radio radio-secondary" value="2"> 
+               <span class="radio-mark"></span>
+             </div>
+           </label>
+         </div> 
+         </div>
+     </div>
+       </div>
+ </div><!---->
  
  
  
  
- <div class="w-full sm:w-1/2 p-1">
-     <div class="card shadow-lg bg-white w-full " id="typeOfJob">  
+ <div class="w-full sm:w-1/2 p-2 ">
+     <div class=" card shadow-lg bg-white w-full " id="typeOfJob">  
          <div class="card-body justify-evenly"> 
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnModeFreelance">  
          <div class="form-control" id="freelanceJob">
-          <div>
-            <input type="radio" name="chooseMode" checked="checked" class="radio radio-primary" value="1"> 
-            <span class="radio-mark"></span>
-          </div>
            <label class="cursor-pointer label">
-             <span class="label-text px-1 content-center">FREELANCE</span>           
+             <span class="label-text pr-1">FREELANCE</span> 
+             <div>
+               <input type="radio" name="chooseMode" checked="checked" class="radio radio-primary" value="1"> 
+               <span class="radio-mark"></span>
+             </div>
            </label>
          </div> 
      </div>
      <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnModeFulltime">  
          <div class="form-control" id="fullTimeJob">
-          <div>
-            <input type="radio" name="chooseMode"  class="radio radio-secondary" value="2"> 
-            <span class="radio-mark"></span>
-          </div>
            <label class="cursor-pointer label">
-             <span class="label-text px-1 content-center">FULL-TIME</span> 
+             <span class="label-text pr-1">FULL-TIME</span> 
+             <div>
+               <input type="radio" name="chooseMode"  class="radio radio-secondary" value="2"> 
+               <span class="radio-mark"></span>
+             </div>
            </label>
          </div>     
          </div>
@@ -251,12 +215,12 @@
  
  
  <div class="w-full sm:w-1/2 p-2 ">
-     <div class="p-1 card shadow-lg bg-white  " id="borderOrNot">    
+     <div class=" card shadow-lg bg-white  " id="borderOrNot">    
        <div class="card-body">
        <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnBorderNo"> 
            <div class="form-control">
              <label class="cursor-pointer label">
-               <span class="label-text px-1">Without Border</span> 
+               <span class="label-text pr-1">Without Border</span> 
                <div>
                  <input type="radio" name="chooseBorderYesNo" checked="checked" class="radio radio-primary" value=""> 
                  <span class="radio-mark"></span>
@@ -267,7 +231,7 @@
        <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnBorderYes">   
        <div class="form-control">
          <label class="cursor-pointer label">
-           <span class="label-text px-1">With Border</span> 
+           <span class="label-text pr-1">With Border</span> 
            <div>
              <input type="radio" name="chooseBorderYesNo"  class="radio radio-secondary" value=""> 
              <span class="radio-mark"></span>
@@ -279,7 +243,7 @@
        <div class="w-full sm:w-1/2 p-2 m-1 bordered mx-auto" id="btnChooseColor">   
            <div class="form-control">
                <label class="cursor-pointer label">
-           <span class="label-text px-1">CHOOSE BORDER COLOR</span> 
+           <span class="label-text pr-1">CHOOSE BORDER COLOR</span> 
            <div>
              <input id="borderColorSelection" value='#00ffcc' type="color"   />
              
@@ -296,12 +260,12 @@
  
  
  <div class="w-full sm:w-1/2 p-2 ">
-       <div class="p-1 card shadow-lg bg-white    " id="positionOfCutLooking">     
+       <div class=" card shadow-lg bg-white    " id="positionOfCutLooking">     
          <div class="card-body">
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosLeft"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text px-1">LEFT</span> 
+             <span class="label-text pr-1">LEFT</span> 
              <div>
                <input type="radio" name="choosePosLooking" checked="checked" class="radio radio-primary" value="1"> 
                <span class="radio-mark"></span>
@@ -312,7 +276,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosTop"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text px-1">TOP</span> 
+             <span class="label-text pr-1">TOP</span> 
              <div>
                <input type="radio" name="choosePosLooking"  class="radio radio-secondary" value="2"> 
                <span class="radio-mark"></span>
@@ -325,12 +289,12 @@
  
  
       
-       <div class="p-1 card shadow-lg bg-white   " id="positionOfCutHiring">   
+       <div class=" card shadow-lg bg-white   " id="positionOfCutHiring">   
          <div class="card-body">
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosRight">   
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text px-1">RIGHT</span> 
+             <span class="label-text pr-1">RIGHT</span> 
              <div>
                <input type="radio" name="choosePosHiring" checked="checked" class="radio radio-primary" value=""> 
                <span class="radio-mark"></span>
@@ -341,7 +305,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosBottom"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text px-1">BOTTOM</span> 
+             <span class="label-text pr-1">BOTTOM</span> 
              <div>
                <input type="radio" name="choosePosHiring"  class="radio radio-secondary" value=""> 
                <span class="radio-mark"></span>
@@ -367,8 +331,9 @@
  
     
  <div class="w-full p-2 ">
-         <div class="p-1 card shadow-lg bg-white  w-full   mx-1 mt-1  " >
-             <div class="btn btn-outline btn-accent  w-1/2 sm:w-1/3 mx-auto" id="renderIt">  
+         <div class="py-2 card shadow-lg bg-white  w-full   mx-1 mt-1  " >
+             
+             <div class="btn btn-outline btn-accent  w-1/2 sm:w-3/4 mx-auto" id="renderIt">  
              <span class="label-text"> MAKE MY NEW AWESOME PROFILE IMAGE</span>
              </div>
          <!--<p class="p-2">(You can save the image by right-clicking or long tapping) </p>-->
@@ -384,17 +349,18 @@
  
  
  
- <div class="w-full my-5">
+ <div class="w-full my-6">
  <center>
-    <h2 class="text-xl font-medium text-black text-center">DON'T FORGET TO SHARE THE LOVE </h2>
-   <a href="https://twitter.com/intent/tweet?button_hashtag=boostJobSearch&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="Check out my modified profile pic" data-url="https://www.boostjobsearch.notanothervivek.com" data-related="@notAnotherVivek" data-show-count="false">Tweet #boostJobSearch</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
+    <h1 class="text-xl font-medium text-black text-center">DON'T FORGET TO SPREAD THE LOVE </h1>
+   <a href="https://twitter.com/intent/tweet?button_hashtag=boostJobSearch&ref_src=twsrc%5Etfw" class="twitter-hashtag-button" data-size="large" data-text="Check out my awesome modified profile pic. You should do it too if you want to #boostJobSearch " data-url="https://boostjobsearch.notanothervivek.com" data-related="@notAnotherVivek" data-show-count="false">Tweet #boostJobSuccess</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> 
  </center>
 </div>
  
  
  
  
- <div class="w-full mt-2">
+ 
+ <div class="w-full mt-5">
    <div class="divider">REFERENCE</div> 
    <p class="mb-4 mt-1"></p>
      </div>
@@ -403,7 +369,7 @@
  
  <div class="w-full">
  
-   <img class="w-5/6 h-auto mx-auto my-3 card shadow-lg " src="images/fullForWebsite.png">
+   <img class="w-full h-auto mx-auto my-3" src="images/fullForWebsite.png">
  
  </div>
  
@@ -427,10 +393,10 @@
    <script>
  
  let ref_obj={
- 'type':1, //looking ...2=hiring 
- 'mode':1, //freelance ..2=full time 
- 'pos':1, //left ..2=top  right bottom
- 'border':1 //without border ...2 border
+ 'type':1, 
+ 'mode':1, 
+ 'pos':1, 
+ 'border':1 
  
  }
  
@@ -577,7 +543,6 @@
      $('#btnPosLeft').click()
      $('#positionOfCutLooking').show()
      $('#positionOfCutHiring').hide()
-
  });
  
  
@@ -588,7 +553,6 @@
      $('#btnPosRight').click()
      $('#positionOfCutHiring').show()
      $('#positionOfCutLooking').hide()
-
  });
  
  
@@ -706,8 +670,7 @@
  immm.width="400"
  immm.height="400"
  immm.addEventListener("load", function() {
-  
- 
+
  img_loaded = 1
  
  });
@@ -732,10 +695,12 @@
  
  
  
- function make_hiring_fulltime_right_borderless(){
-     let sourceimage = document.getElementById('demoimg')//document.querySelector('img');
- // let canvas =    document.querySelector('canvas');
  
+ 
+ 
+ function make_hiring_fulltime_right_borderless(){
+     let sourceimage = document.getElementById('demoimg')
+
  let canvas = document.createElement("CANVAS")
  
  
@@ -2318,7 +2283,7 @@
  $(document).ready(function(){
  setTimeout(() => {
  abc()
- }, 1000);
+ }, 4000);
  
  });
  
