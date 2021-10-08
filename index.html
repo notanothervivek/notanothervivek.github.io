@@ -70,6 +70,13 @@
    width:auto;
  }
      </style>
+
+     <style>
+       .btn{
+         height: auto !important;
+         display: flex !important ;
+       }
+     </style>
  
  <body class="bg-accent">
  <!--<h1 class="text-xl font-medium text-black m-1  text-semibold bordered p-1">boostJobSearch</h1>-->
@@ -111,7 +118,7 @@
            <ul class="steps w-full">
              <li class="step step-info">Upload Image</li> 
              <li class="step step-info">Select Options</li> 
-             <li class="step step-info">Get A Boosted Profile Image</li> 
+             <li class="step step-info">Boosted Image</li> 
            </ul>
  
  
@@ -149,7 +156,7 @@
          <div class="btn btn-outline btn-accent  w-full sm:w-1/2 mx-auto" id="btnUploadImage">   
            <div class="form-control">
                <label class="cursor-pointer label">
-               <span class="label-text  pr-3">UPLOAD IMAGE</span> 
+               <span class="label-text  px-1">UPLOAD IMAGE</span> 
                <div>
                  <input id="image-file" type="file" />
                  
@@ -179,7 +186,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeLooking"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">LOOKING FOR JOB</span> 
+             <span class="label-text px-1">LOOKING FOR JOB</span> 
              <div>
                <input type="radio" name="chooseType" checked="checked" class="radio radio-primary" value="1"> 
                <span class="radio-mark"></span>
@@ -190,7 +197,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnTypeHiring">
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text  pr-3">HIRING FOR JOB</span> 
+             <span class="label-text  px-1">HIRING FOR JOB</span> 
              <div>
                <input type="radio" name="chooseType"  class="radio radio-secondary" value="2"> 
                <span class="radio-mark"></span>
@@ -211,7 +218,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnModeFreelance">  
          <div class="form-control" id="freelanceJob">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">FREELANCE</span> 
+             <span class="label-text px-1">FREELANCE</span> 
              <div>
                <input type="radio" name="chooseMode" checked="checked" class="radio radio-primary" value="1"> 
                <span class="radio-mark"></span>
@@ -222,7 +229,7 @@
      <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnModeFulltime">  
          <div class="form-control" id="fullTimeJob">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">FULL-TIME</span> 
+             <span class="label-text px-1">FULL-TIME</span> 
              <div>
                <input type="radio" name="chooseMode"  class="radio radio-secondary" value="2"> 
                <span class="radio-mark"></span>
@@ -242,7 +249,7 @@
        <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnBorderNo"> 
            <div class="form-control">
              <label class="cursor-pointer label">
-               <span class="label-text pr-3">Without Border</span> 
+               <span class="label-text px-1">Without Border</span> 
                <div>
                  <input type="radio" name="chooseBorderYesNo" checked="checked" class="radio radio-primary" value=""> 
                  <span class="radio-mark"></span>
@@ -253,7 +260,7 @@
        <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnBorderYes">   
        <div class="form-control">
          <label class="cursor-pointer label">
-           <span class="label-text pr-3">With Border</span> 
+           <span class="label-text px-1">With Border</span> 
            <div>
              <input type="radio" name="chooseBorderYesNo"  class="radio radio-secondary" value=""> 
              <span class="radio-mark"></span>
@@ -265,7 +272,7 @@
        <div class="w-full sm:w-1/2 p-2 m-1 bordered mx-auto" id="btnChooseColor">   
            <div class="form-control">
                <label class="cursor-pointer label">
-           <span class="label-text pr-3">CHOOSE BORDER COLOR</span> 
+           <span class="label-text px-1">CHOOSE BORDER COLOR</span> 
            <div>
              <input id="borderColorSelection" value='#00ffcc' type="color"   />
              
@@ -287,7 +294,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosLeft"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">LEFT</span> 
+             <span class="label-text px-1">LEFT</span> 
              <div>
                <input type="radio" name="choosePosLooking" checked="checked" class="radio radio-primary" value="1"> 
                <span class="radio-mark"></span>
@@ -298,7 +305,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosTop"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">TOP</span> 
+             <span class="label-text px-1">TOP</span> 
              <div>
                <input type="radio" name="choosePosLooking"  class="radio radio-secondary" value="2"> 
                <span class="radio-mark"></span>
@@ -316,7 +323,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosRight">   
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">RIGHT</span> 
+             <span class="label-text px-1">RIGHT</span> 
              <div>
                <input type="radio" name="choosePosHiring" checked="checked" class="radio radio-primary" value=""> 
                <span class="radio-mark"></span>
@@ -327,7 +334,7 @@
          <div class="btn btn-outline btn-accent  w-1/2 mx-1" id="btnPosBottom"> 
          <div class="form-control">
            <label class="cursor-pointer label">
-             <span class="label-text pr-3">BOTTOM</span> 
+             <span class="label-text px-1">BOTTOM</span> 
              <div>
                <input type="radio" name="choosePosHiring"  class="radio radio-secondary" value=""> 
                <span class="radio-mark"></span>
